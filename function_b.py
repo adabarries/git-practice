@@ -7,7 +7,16 @@ def silly_sum():
         the user enters 0, or
         the sum reaches or exceeds 1000
     """
-    pass
+    
+    total = 0
+    while total < 1000:
+        user_input = input("Enter an integer: ")
+        user_input = int(user_input)
+        if user_input == 0:
+            break
+        else:
+            total += user_input
+    return total        
 
 
 if __name__ == "__main__":
